@@ -1,0 +1,78 @@
+{
+  "name": "lli-global-auth",
+  "version": "1.0.0",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:DEVELOP": "vue-cli-service build --mode development",
+    "build:TEST": "vue-cli-service build --mode testus1",
+    "build:TESTUS1": "vue-cli-service build --mode testus1",
+    "build:PRODUCT-US2": "vue-cli-service build --mode productus2",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^3.4.3",
+    "element-ui": "^2.13.0",
+    "js-cookie": "^2.2.1",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.15.1",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-unit-jest": "^4.1.1",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^3.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

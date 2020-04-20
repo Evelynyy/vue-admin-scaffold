@@ -1,0 +1,98 @@
+::-webkit-scrollbar-track-piece {
+  width: 6px;
+  border: 0;
+  border-radius: 3px;
+  background: #eee;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 3px;
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0;
+  border-radius: 3px;
+  background-color: #ddd;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+
+/* some custom styles for cover Element UI */
+.kyc-info-module {
+  .file-block,
+  .info-block {
+    .el-card__body {
+      height: 400px;
+      overflow: auto;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .file-block.fold,
+  .info-block.fold {
+    .el-card__body {
+      height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.kyc-log {
+  .el-collapse-item__header, .el-collapse-item__wrap {
+    border: none;
+  }
+}
+
+.validate-error {
+  input, textarea {
+    border-color: #f00;
+  }
+}
+
+.image-slot {
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+}
+
+.hide-upload-button {
+  .el-upload {
+    display: none;
+  }
+}
+
+.row-normal {
+  td,
+  th {
+    padding: 6px 0;
+  }
+}
+
+.row-small {
+  td,
+  th {
+    padding: 3px 0;
+  }
+}
+
+.row-mini {
+  td,
+  th {
+    padding: 0 0;
+  }
+}

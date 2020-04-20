@@ -1,0 +1,15 @@
+#layout {
+  height: 100%;
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .content {
+    flex: 1;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #fff;
+  }
+}

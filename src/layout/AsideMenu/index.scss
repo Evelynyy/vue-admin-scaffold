@@ -1,0 +1,23 @@
+.wrap-aside {
+  height: 100%;
+  // background-color: #3d4f62;
+  z-index: 2; // 防止被header和footer的阴影覆盖
+
+  .header {
+    line-height: 60px;
+    // color: #fff;
+    position: relative;
+
+    .collapse-button {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      margin-top: -7px;
+      margin-right: -7;
+    }
+  }
+
+  .menu-wrapper {
+    padding: 0;
+  }
+}
